@@ -1,0 +1,16 @@
+1. Basic purpose
+ -> ak shop management, customer management
+
+2. Ki ki idea
+ -> Shop -> every shop location
+    Agora -> cell no, email
+    Customer -> customer id
+    Rahim -> cell no, email
+    Item -> item id, name ,price
+
+
+    ContactInfo Class-> cell no, email;
+    Item -> item id, name, price;
+    Customer -> customer id, ContactInfo contactInfo, List<Item> cartList;
+    Shop -> location, ContactInfo contactInfo, List<Item> itemList
+

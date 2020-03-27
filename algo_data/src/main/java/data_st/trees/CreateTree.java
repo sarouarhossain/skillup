@@ -18,5 +18,8 @@ public class CreateTree {
     System.out.println("Node: " + tree.nodeCount(tree.rootNode));
     System.out.println("Height: " + tree.heightCount(tree.rootNode));
     System.out.println("Leaf: " + tree.leafCount(tree.rootNode));
+
+    System.out.println("TopView: ");
+    tree.topView(tree.rootNode);
   }
 }

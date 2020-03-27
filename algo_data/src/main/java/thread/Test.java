@@ -7,6 +7,9 @@ public class Test {
 //        MyThread myThread = new MyThread("thread 1");
 //        myThread.start();
 
+        int coreCount = Runtime.getRuntime().availableProcessors();
+        System.out.println("Cores: "+coreCount);
+
         TestRunnable testRunnable = new TestRunnable();
         Thread t = new Thread(testRunnable);
         t.start();

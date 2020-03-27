@@ -101,4 +101,28 @@ public class TreeC {
     }
     return 0;
   }
+
+  public void topView(TreeNode root){
+    if(root.leftNode != null){
+      leftPrint(root.leftNode);
+    }
+    System.out.print(root.data+" ");
+    if(root.rightNode != null){
+      rightPrint(root.rightNode);
+    }
+  }
+
+  public static void leftPrint(TreeNode node){
+    if(node != null){
+      leftPrint(node.leftNode);
+      System.out.print(node.data+" ");
+    }
+  }
+
+  public static void rightPrint(TreeNode node){
+    if(node != null){
+      System.out.print(node.data+" ");
+      rightPrint(node.rightNode);
+    }
+  }
 }
